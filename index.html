@@ -2589,7 +2589,7 @@ section {
         </div>
         <div class="meta-row" style="grid-template-columns:260px 1fr">
           <div class="meta-k">Coef. temperatura V<sub>oc</sub> (β)</div>
-          <div class="meta-v" style="font-family:'JetBrains Mono',monospace;font-size:13px">−0,27 %/°C</div>
+          <div class="meta-v" style="font-family:'JetBrains Mono',monospace;font-size:13px">−0,275 %/°C</div>
         </div>
         <div class="meta-row" style="grid-template-columns:260px 1fr">
           <div class="meta-k">Coef. temperatura P<sub>max</sub> (γ)</div>
@@ -2597,7 +2597,7 @@ section {
         </div>
         <div class="meta-row" style="grid-template-columns:260px 1fr">
           <div class="meta-k">NOCT</div>
-          <div class="meta-v"><em>41 ± 2 °C</em></div>
+          <div class="meta-v"><em>45 ± 2 °C</em></div>
         </div>
         <!-- Bloque mecánico -->
         <div class="meta-row" style="grid-template-columns:260px 1fr;margin-top:8px">
@@ -2610,11 +2610,11 @@ section {
         </div>
         <div class="meta-row" style="grid-template-columns:260px 1fr">
           <div class="meta-k">Peso</div>
-          <div class="meta-v">~25,9 kg</div>
+          <div class="meta-v">~26,3 kg</div>
         </div>
         <div class="meta-row" style="grid-template-columns:260px 1fr">
           <div class="meta-k">Celdas</div>
-          <div class="meta-v">66 × monocristalino PERC half-cell, MBB</div>
+          <div class="meta-v">132 × monocristalino PERC half-cell, MBB</div>
         </div>
         <div class="meta-row" style="grid-template-columns:260px 1fr">
           <div class="meta-k">Vidrio frontal</div>
@@ -2622,7 +2622,7 @@ section {
         </div>
         <div class="meta-row" style="grid-template-columns:260px 1fr">
           <div class="meta-k">Conector</div>
-          <div class="meta-v">MC4 (compatible)</div>
+          <div class="meta-v">Stäubli MC4-EVO2A</div>
         </div>
         <!-- Bloque eléctrico seguridad -->
         <div class="meta-row" style="grid-template-columns:260px 1fr;margin-top:8px">
@@ -2746,21 +2746,21 @@ section {
           <span>K</span>
           <span class="eq-op">&nbsp;=&nbsp;</span>
           <span class="eq-fraction">
-            <span class="eq-num">41 − 20</span>
+            <span class="eq-num">45 − 20</span>
             <span class="eq-den">800 W/m²</span>
           </span>
           <span class="eq-op">&nbsp;=&nbsp;</span>
           <span class="eq-fraction">
-            <span class="eq-num">21</span>
+            <span class="eq-num">25</span>
             <span class="eq-den">800</span>
           </span>
         </div>
         <div class="eq-result-box">
           <span class="eq-result-label">K&nbsp;=</span>
-          <span class="eq-result-val">0,02625 °C·m²/W</span>
+          <span class="eq-result-val">0,03125 °C·m²/W</span>
         </div>
       </div>
-      <div class="eq-desc">Factor que indica cuántos grados se calienta la celda por cada W/m² de irradiancia recibida. Valores NOCT del JA Solar JAM66S30: T<sub>cel</sub> = 41 °C · T<sub>amb</sub> = 20 °C · G = 800 W/m².</div>
+      <div class="eq-desc">Factor que indica cuántos grados se calienta la celda por cada W/m² de irradiancia recibida. Valores NOCT del JA Solar JAM66S30: T<sub>cel</sub> = 45 °C · T<sub>amb</sub> = 20 °C · G = 800 W/m².</div>
     </div>
 
     <!-- Tabla de valores del sitio -->
@@ -2819,11 +2819,11 @@ section {
               <span class="eq-op">=&nbsp;</span>
               <span>32</span>
               <span class="eq-op">&nbsp;+&nbsp;</span>
-              <span>0,02625&nbsp;×&nbsp;1.000</span>
+              <span>0,03125&nbsp;×&nbsp;1.000</span>
             </div>
             <div class="eq-result-box eq-result-box--hot" style="margin-top:10px">
               <span class="eq-result-label">T<sub>celd,max</sub>&nbsp;=</span>
-              <span class="eq-result-val eq-result-val--hot">58,25 °C</span>
+              <span class="eq-result-val eq-result-val--hot">63,25 °C</span>
             </div>
           </div>
           <div class="eq-desc">Condición de máxima temperatura de operación. Reduce la potencia de salida por coeficiente térmico de P<sub>max</sub>.</div>
@@ -2844,11 +2844,11 @@ section {
               <span class="eq-op">=&nbsp;</span>
               <span>18</span>
               <span class="eq-op">&nbsp;+&nbsp;</span>
-              <span>0,02625&nbsp;×&nbsp;100</span>
+              <span>0,03125&nbsp;×&nbsp;100</span>
             </div>
             <div class="eq-result-box eq-result-box--cold" style="margin-top:10px">
               <span class="eq-result-label">T<sub>celd,min</sub>&nbsp;=</span>
-              <span class="eq-result-val eq-result-val--cold">20,6 °C</span>
+              <span class="eq-result-val eq-result-val--cold">21,1 °C</span>
             </div>
           </div>
           <div class="eq-desc">Condición de mínima temperatura de celda. Genera el V<sub>oc</sub> más alto — condición crítica para dimensionar la entrada del inversor.</div>
@@ -2875,22 +2875,22 @@ section {
         <div class="eq-numeric" style="margin-top:6px">
           <span>V<sub>oc,max</sub></span>
           <span class="eq-op">&nbsp;=&nbsp;</span>
-          <span>45,59 V&nbsp;×&nbsp;[&nbsp;1&nbsp;+&nbsp;(−0,0027)&nbsp;×&nbsp;(20,6&nbsp;−&nbsp;25)&nbsp;]</span>
+          <span>45,59 V&nbsp;×&nbsp;[&nbsp;1&nbsp;+&nbsp;(−0,00275)&nbsp;×&nbsp;(21,1&nbsp;−&nbsp;25)&nbsp;]</span>
         </div>
         <div class="eq-numeric" style="opacity:0.72;font-size:0.9em;margin-top:2px">
           <span class="eq-op">=&nbsp;</span>
-          <span>45,59 V&nbsp;×&nbsp;[&nbsp;1&nbsp;+&nbsp;0,01188&nbsp;]&nbsp;=&nbsp;45,59 V&nbsp;×&nbsp;1,01188</span>
+          <span>45,59 V&nbsp;×&nbsp;[&nbsp;1&nbsp;+&nbsp;0,01073&nbsp;]&nbsp;=&nbsp;45,59 V&nbsp;×&nbsp;1,01073</span>
         </div>
         <div class="eq-result-box" style="margin-top:10px">
           <span class="eq-result-label">V<sub>oc,max</sub>&nbsp;=</span>
-          <span class="eq-result-val">46,1 V / módulo</span>
+          <span class="eq-result-val">46,08 V / módulo</span>
         </div>
         <div class="eq-result-box" style="margin-top:8px">
           <span class="eq-result-label">V<sub>oc,string</sub>&nbsp;=</span>
-          <span class="eq-result-val">92,3 V &nbsp;(2 módulos en serie)</span>
+          <span class="eq-result-val">92,16 V &nbsp;(2 módulos en serie)</span>
         </div>
       </div>
-      <div class="eq-desc">Datos del módulo JA Solar JAM66S30: V<sub>oc,STC</sub> = 45,59 V · β<sub>Voc</sub> = −0,27 %/°C. La temperatura mínima de celda (20,6 °C) está <strong>por debajo</strong> de los 25 °C de STC, por lo que el voltaje <em>aumenta</em> respecto al nominal — éste es el caso peligroso.</div>
+      <div class="eq-desc">Datos del módulo JA Solar JAM66S30: V<sub>oc,STC</sub> = 45,59 V · β<sub>Voc</sub> = −0,275 %/°C. La temperatura mínima de celda (21,1 °C) está <strong>por debajo</strong> de los 25 °C de STC, por lo que el voltaje <em>aumenta</em> respecto al nominal — éste es el caso peligroso.</div>
     </div>
 
     <!-- Tabla de verificación con semáforo -->
@@ -2910,25 +2910,25 @@ section {
           <tbody>
             <tr>
               <td class="vt-check">V<sub>oc</sub> string máximo (T mín. celda)</td>
-              <td class="vt-val">92,3 V</td>
+              <td class="vt-val">92,16 V</td>
               <td class="vt-lim">&lt; 600 V (V<sub>DC,max</sub>)</td>
               <td><span class="ok-badge"><span class="ok-dot"></span>OK</span></td>
             </tr>
             <tr>
-              <td class="vt-check">V<sub>oc</sub> string a T máxima celda</td>
-              <td class="vt-val">83,0 V</td>
-              <td class="vt-lim">&gt; 60 V (MPPT mínimo)</td>
+              <td class="vt-check">V<sub>oc</sub> string a T máxima celda (63,25 °C)</td>
+              <td class="vt-val">81,6 V</td>
+              <td class="vt-lim">&gt; 50 V (MPPT mín. Growatt)</td>
               <td><span class="ok-badge"><span class="ok-dot"></span>OK</span></td>
             </tr>
             <tr>
               <td class="vt-check">Margen de seguridad</td>
-              <td class="vt-val">92,3 / 600 V</td>
+              <td class="vt-val">92,16 / 600 V</td>
               <td class="vt-lim">15,4 % del máximo</td>
               <td><span class="ok-badge"><span class="ok-dot"></span>Amplio</span></td>
             </tr>
             <tr>
               <td class="vt-check">Factor NTC 2050 Art. 690.7 (×1,25)</td>
-              <td class="vt-val">115,3 V</td>
+              <td class="vt-val">115,2 V</td>
               <td class="vt-lim">&lt; 600 V</td>
               <td><span class="ok-badge"><span class="ok-dot"></span>OK</span></td>
             </tr>
@@ -2940,7 +2940,7 @@ section {
     <!-- Callout final sub-bloque B -->
     <div class="verification-callout">
       <div class="vc-title">Resultado de la corrección por temperatura</div>
-      <p>El V<sub>oc</sub> máximo del string de 2 módulos en serie es de <strong>92,3 V</strong> (115,3 V aplicando el factor de seguridad de NTC 2050 Art. 690.7). Este valor es muy inferior al V<sub>DC,max</sub> del inversor (600 V), con un margen de seguridad superior al <strong>80 %</strong>. El diseño es robusto ante variaciones climáticas extremas y cumple con la normativa vigente.</p>
+      <p>El V<sub>oc</sub> máximo del string de 2 módulos en serie es de <strong>92,16 V</strong> (115,2 V aplicando el factor de seguridad de NTC 2050 Art. 690.7). Este valor es muy inferior al V<sub>DC,max</sub> del inversor (600 V), con un margen de seguridad superior al <strong>80 %</strong>. El diseño es robusto ante variaciones climáticas extremas y cumple con la normativa vigente.</p>
     </div>
 
   </div><!-- /sub-bloque B -->
@@ -2974,13 +2974,13 @@ section {
               <td class="dt-param">Voltaje circuito abierto</td>
               <td class="dt-symbol">V<sub>oc</sub></td>
               <td class="dt-val">45,59 V</td>
-              <td class="dt-coef">−0,27 %/°C</td>
+              <td class="dt-coef">−0,275 %/°C</td>
             </tr>
             <tr>
               <td class="dt-param">Voltaje máxima potencia</td>
               <td class="dt-symbol">V<sub>mpp</sub></td>
               <td class="dt-val">38,35 V</td>
-              <td class="dt-coef">−0,27 %/°C</td>
+              <td class="dt-coef">≈ γ<sub>Pmax</sub> = −0,35 %/°C</td>
             </tr>
             <tr>
               <td class="dt-param">Corriente cortocircuito</td>
@@ -3017,11 +3017,11 @@ section {
           <div class="eq-numeric">
             <span>ΔT<sub>max</sub></span>
             <span class="eq-op">&nbsp;=&nbsp;</span>
-            <span>58,25&nbsp;−&nbsp;25</span>
+            <span>63,25&nbsp;−&nbsp;25</span>
           </div>
           <div class="eq-result-box eq-result-box--hot">
             <span class="eq-result-label">ΔT<sub>max</sub>&nbsp;=</span>
-            <span class="eq-result-val eq-result-val--hot">33,25 °C</span>
+            <span class="eq-result-val eq-result-val--hot">38,25 °C</span>
           </div>
         </div>
         <div class="eq-desc">Condición caliente al mediodía. Usado para V<sub>mpp</sub> mínimo y pérdida de potencia.</div>
@@ -3067,11 +3067,11 @@ section {
           <div class="eq-numeric">
             <span>ΔT<sub>min</sub></span>
             <span class="eq-op">&nbsp;=&nbsp;</span>
-            <span>20,6&nbsp;−&nbsp;25</span>
+            <span>21,1&nbsp;−&nbsp;25</span>
           </div>
           <div class="eq-result-box eq-result-box--cold">
             <span class="eq-result-label">ΔT<sub>min</sub>&nbsp;=</span>
-            <span class="eq-result-val eq-result-val--cold">−4,4 °C</span>
+            <span class="eq-result-val eq-result-val--cold">−3,9 °C</span>
           </div>
         </div>
         <div class="eq-desc">Celda más fría que STC al amanecer. Genera V<sub>oc</sub> máximo — caso crítico de sobrevoltaje.</div>
@@ -3099,19 +3099,19 @@ section {
         <div class="eq-numeric" style="margin-top:6px">
           <span>V<sub>oc,max</sub></span>
           <span class="eq-op">&nbsp;=&nbsp;</span>
-          <span>45,59&nbsp;+&nbsp;(−4,4)&nbsp;×&nbsp;(−0,0027&nbsp;×&nbsp;45,59)</span>
+          <span>45,59&nbsp;+&nbsp;(−3,9)&nbsp;×&nbsp;(−0,00275&nbsp;×&nbsp;45,59)</span>
         </div>
         <div class="eq-numeric" style="opacity:0.72;font-size:0.88em;margin-top:2px">
           <span class="eq-op">=&nbsp;</span>
-          <span>45,59&nbsp;+&nbsp;(−4,4)&nbsp;×&nbsp;(−0,123 V/°C)</span>
+          <span>45,59&nbsp;+&nbsp;(−3,9)&nbsp;×&nbsp;(−0,125 V/°C)</span>
         </div>
         <div class="eq-numeric" style="opacity:0.72;font-size:0.88em;margin-top:2px">
           <span class="eq-op">=&nbsp;</span>
-          <span>45,59&nbsp;+&nbsp;0,541 V</span>
+          <span>45,59&nbsp;+&nbsp;0,489 V</span>
         </div>
         <div class="eq-result-box" style="margin-top:10px">
           <span class="eq-result-label">V<sub>oc,max</sub>&nbsp;=</span>
-          <span class="eq-result-val">46,1 V / módulo</span>
+          <span class="eq-result-val">46,08 V / módulo</span>
         </div>
       </div>
       <div class="eq-desc">El signo doblemente negativo (ΔT negativo × β negativo) produce un voltaje <strong>mayor</strong> al nominal STC. Esta es la condición crítica para dimensionar la entrada del inversor (V<sub>DC,max</sub>).</div>
@@ -3130,39 +3130,39 @@ section {
             <div class="eq-numeric">
               <span>V<sub>mpp,med</sub></span>
               <span class="eq-op">&nbsp;=&nbsp;</span>
-              <span>38,35&nbsp;+&nbsp;25&nbsp;×&nbsp;(−0,0027)&nbsp;×&nbsp;38,35</span>
+              <span>38,35&nbsp;×&nbsp;[1&nbsp;+&nbsp;(−0,0035)&nbsp;×&nbsp;25]</span>
             </div>
             <div class="eq-numeric" style="opacity:0.7;font-size:0.88em;margin-top:2px">
               <span class="eq-op">=&nbsp;</span>
-              <span>38,35&nbsp;−&nbsp;2,59</span>
+              <span>38,35&nbsp;×&nbsp;0,9125&nbsp;=&nbsp;35,0 V</span>
             </div>
             <div class="eq-result-box" style="margin-top:10px">
               <span class="eq-result-label">V<sub>mpp,med</sub>&nbsp;=</span>
-              <span class="eq-result-val">35,8 V</span>
+              <span class="eq-result-val">35,0 V</span>
             </div>
           </div>
-          <div class="eq-desc">Voltaje de trabajo promedio. Verifica que el inversor operará dentro de su rango MPPT.</div>
+          <div class="eq-desc">Voltaje de trabajo promedio usando γ<sub>Pmax</sub> = −0,35 %/°C. Verifica que el inversor opera dentro de su rango MPPT.</div>
         </div>
 
         <!-- Vmpp mínimo ΔT_max — crítico -->
         <div class="eq-split-case">
-          <div class="eq-case-label eq-case-label--hot">V<sub>mpp</sub> mínimo · ΔT<sub>max</sub> = 33,25 °C</div>
+          <div class="eq-case-label eq-case-label--hot">V<sub>mpp</sub> mínimo · ΔT<sub>max</sub> = 38,25 °C</div>
           <div class="eq-body">
             <div class="eq-numeric">
               <span>V<sub>mpp,min</sub></span>
               <span class="eq-op">&nbsp;=&nbsp;</span>
-              <span>38,35&nbsp;+&nbsp;33,25&nbsp;×&nbsp;(−0,0027)&nbsp;×&nbsp;38,35</span>
+              <span>38,35&nbsp;×&nbsp;[1&nbsp;+&nbsp;(−0,0035)&nbsp;×&nbsp;38,25]</span>
             </div>
             <div class="eq-numeric" style="opacity:0.7;font-size:0.88em;margin-top:2px">
               <span class="eq-op">=&nbsp;</span>
-              <span>38,35&nbsp;−&nbsp;3,44</span>
+              <span>38,35&nbsp;×&nbsp;0,8661&nbsp;=&nbsp;33,21 V</span>
             </div>
             <div class="eq-result-box eq-result-box--hot" style="margin-top:10px">
               <span class="eq-result-label">V<sub>mpp,min</sub>&nbsp;=</span>
-              <span class="eq-result-val eq-result-val--hot">34,9 V</span>
+              <span class="eq-result-val eq-result-val--hot">33,21 V</span>
             </div>
           </div>
-          <div class="eq-desc">Voltaje mínimo al mediodía. El MPPT del inversor debe alcanzar al menos este valor para no perder tracking.</div>
+          <div class="eq-desc">Voltaje mínimo al mediodía bajo calor extremo. V<sub>mpp</sub> string = 2 × 33,21 = <strong>66,42 V</strong> — valor crítico para selección del inversor.</div>
         </div>
 
       </div>
@@ -3183,11 +3183,11 @@ section {
         <div class="eq-numeric">
           <span>%&thinsp;pérd.</span>
           <span class="eq-op">&nbsp;=&nbsp;</span>
-          <span>33,25&nbsp;×&nbsp;0,35 %</span>
+          <span>38,25&nbsp;×&nbsp;0,35 %</span>
         </div>
         <div class="eq-result-box eq-result-box--hot" style="margin-bottom:20px">
           <span class="eq-result-label">%&thinsp;pérd.&nbsp;=</span>
-          <span class="eq-result-val eq-result-val--hot">11,6 %</span>
+          <span class="eq-result-val eq-result-val--hot">13,4 %</span>
         </div>
         <div class="eq-symbolic">
           <span><em>P<sub>mpp,real</sub></em></span>
@@ -3200,32 +3200,32 @@ section {
         <div class="eq-numeric" style="margin-top:4px">
           <span>P<sub>mpp,real</sub></span>
           <span class="eq-op">&nbsp;=&nbsp;</span>
-          <span>500 W&nbsp;×&nbsp;(1&nbsp;−&nbsp;0,116)</span>
+          <span>500 W&nbsp;×&nbsp;(1&nbsp;−&nbsp;0,134)</span>
         </div>
         <div class="eq-result-box" style="margin-top:10px">
           <span class="eq-result-label">P<sub>mpp,real</sub>&nbsp;=</span>
-          <span class="eq-result-val">442 W / módulo</span>
+          <span class="eq-result-val">433 W / módulo</span>
         </div>
       </div>
-      <div class="eq-desc">Esto valida el PR = 0,74 del dimensionamiento. La pérdida térmica del 11,6%, más pérdidas ópticas, cableado, inversor y suciedad, dan ~26% total (PR efectivo ≈ 0,74).</div>
+      <div class="eq-desc">Esto valida el PR = 0,74 del dimensionamiento. La pérdida térmica del 13,4%, más pérdidas ópticas, cableado, inversor y suciedad, dan ~26% total (PR efectivo ≈ 0,74).</div>
     </div>
 
     <!-- Métricas: potencia real del sistema -->
     <div class="trio-grid" style="margin-bottom:40px">
       <div class="metric">
         <div class="metric-label">P real / módulo</div>
-        <div class="metric-val"><em>442</em> W</div>
-        <div class="metric-hint">a T<sub>celd</sub> = 58,25 °C</div>
+        <div class="metric-val"><em>433</em> W</div>
+        <div class="metric-hint">a T<sub>celd</sub> = 63,25 °C</div>
       </div>
       <div class="metric">
         <div class="metric-label">P real del sistema</div>
-        <div class="metric-val"><em>884</em> W</div>
-        <div class="metric-hint">2 × 442 W</div>
+        <div class="metric-val"><em>866</em> W</div>
+        <div class="metric-hint">2 × 433 W</div>
       </div>
       <div class="metric">
         <div class="metric-label">Pérdida térmica</div>
-        <div class="metric-val"><em>11,6</em> %</div>
-        <div class="metric-hint">β<sub>Pmax</sub> × ΔT<sub>max</sub></div>
+        <div class="metric-val"><em>13,4</em> %</div>
+        <div class="metric-hint">γ<sub>Pmax</sub> × ΔT<sub>max</sub></div>
       </div>
     </div>
 
@@ -3238,11 +3238,11 @@ section {
         <div class="config-rows">
           <div class="config-row">
             <span class="config-row-k">V<sub>oc</sub> string máx.</span>
-            <span class="config-row-v">92,3 V</span>
+            <span class="config-row-v">92,16 V</span>
           </div>
           <div class="config-row">
             <span class="config-row-k">V<sub>mpp</sub> rango</span>
-            <span class="config-row-v">69,8 – 71,5 V</span>
+            <span class="config-row-v">66,42 – 70,04 V</span>
           </div>
           <div class="config-row">
             <span class="config-row-k">I<sub>sc</sub></span>
@@ -3260,11 +3260,11 @@ section {
         <div class="config-rows">
           <div class="config-row">
             <span class="config-row-k">V<sub>oc</sub> string máx.</span>
-            <span class="config-row-v">46,1 V</span>
+            <span class="config-row-v">46,08 V</span>
           </div>
           <div class="config-row">
             <span class="config-row-k">V<sub>mpp</sub> rango</span>
-            <span class="config-row-v">34,9 – 35,8 V</span>
+            <span class="config-row-v">33,21 – 35,0 V</span>
           </div>
           <div class="config-row">
             <span class="config-row-k">I<sub>sc</sub></span>
@@ -3284,7 +3284,7 @@ section {
       <ul class="reasons-list" style="margin-top:10px">
         <li><strong>Voltaje más manejable que corriente</strong> — trabajar con 92 V permite cables de menor calibre AWG; menor I = menor pérdida óhmica y menor costo del conductor.</li>
         <li><strong>Menos pérdidas óhmicas</strong> — a doble voltaje y mitad de corriente respecto a 1S×2P, las pérdidas I²R se reducen a la cuarta parte.</li>
-        <li><strong>Compatibilidad con inversores estándar</strong> — los inversores residenciales monofásicos tienen MPPT típicamente desde 60–80 V; un string de 46 V quedaría al límite o por debajo del rango de operación estable.</li>
+        <li><strong>1S×2P inviable por MPPT</strong> — el V<sub>mpp</sub> de un módulo cae a 33,21 V en operación caliente, por debajo del MPPT mínimo del Growatt MIC 1000TL-X2 (50 V). El string 2S×1P da V<sub>mpp,min</sub> = 66,42 V → margen de +16,4 V sobre el límite de 50 V.</li>
       </ul>
     </div>
 
@@ -3306,15 +3306,15 @@ section {
       <div class="context-info">
         <div class="meta-row" style="grid-template-columns:290px 1fr">
           <div class="meta-k">V<sub>DC</sub> máx. absoluto (×1,25 · NTC 2050)</div>
-          <div class="meta-v"><em>115,3 V</em></div>
+          <div class="meta-v"><em>115,2 V</em></div>
         </div>
         <div class="meta-row" style="grid-template-columns:290px 1fr">
-          <div class="meta-k">V<sub>MPPT</sub> mínimo (V<sub>mpp</sub> a T máxima celda)</div>
-          <div class="meta-v"><em>69,8 V</em></div>
+          <div class="meta-k">V<sub>MPPT</sub> mínimo (V<sub>mpp</sub> a T máxima celda 63,25 °C)</div>
+          <div class="meta-v"><em>66,42 V</em></div>
         </div>
         <div class="meta-row" style="grid-template-columns:290px 1fr">
           <div class="meta-k">V<sub>MPPT</sub> máximo (V<sub>mpp</sub> operación normal)</div>
-          <div class="meta-v">~72 V</div>
+          <div class="meta-v">~70 V</div>
         </div>
         <div class="meta-row" style="grid-template-columns:290px 1fr">
           <div class="meta-k">Corriente DC máxima (I<sub>sc</sub> × 1,25)</div>
@@ -3338,7 +3338,7 @@ section {
     <!-- Tabla comparativa de inversores -->
     <div class="pvw-card" style="margin-bottom:24px">
       <h3>Comparación de inversores comerciales</h3>
-      <div class="chart-sub">Modelos disponibles en Colombia · Compatibilidad con 2S × 1P · JA Solar JAM66S30-500/MR</div>
+      <div class="chart-sub">Criterio decisivo: V<sub>mpp,string,min</sub> = 66,42 V · MPPT mínimo debe ser ≤ 66,42 V · JA Solar JAM66S30-500/MR · 2S × 1P</div>
       <div class="inverter-table-wrap">
         <table class="inverter-table">
           <thead>
@@ -3355,58 +3355,41 @@ section {
           </thead>
           <tbody>
             <tr>
-              <td class="inv-name">SMA Sunny Boy 1.5</td>
-              <td class="inv-num">1.500 W</td><td class="inv-num">600 V</td>
-              <td class="inv-num">80 V</td><td class="inv-num">500 V</td>
-              <td class="inv-num">10 A</td><td class="inv-num">96,5 %</td>
-              <td><span class="status-pill status-pill--warn"><span class="status-dot"></span>I<sub>max</sub> bajo</span></td>
-            </tr>
-            <tr>
-              <td class="inv-name">Huawei SUN2000-1KTL-L1</td>
-              <td class="inv-num">1.000 W</td><td class="inv-num">600 V</td>
-              <td class="inv-num">90 V</td><td class="inv-num">560 V</td>
-              <td class="inv-num">11 A</td><td class="inv-num">97,5 %</td>
-              <td><span class="status-pill status-pill--error"><span class="status-dot"></span>MPPT mín alto</span></td>
-            </tr>
-            <tr>
-              <td class="inv-name">Growatt MIC 1000TL-X</td>
-              <td class="inv-num">1.000 W</td><td class="inv-num">500 V</td>
-              <td class="inv-num">40 V</td><td class="inv-num">450 V</td>
-              <td class="inv-num">13,5 A</td><td class="inv-num">97,6 %</td>
-              <td><span class="status-pill status-pill--warn"><span class="status-dot"></span>I<sub>max</sub> justo</span></td>
-            </tr>
-            <tr>
-              <td class="inv-name">Growatt MIC 750TL-X</td>
-              <td class="inv-num">750 W</td><td class="inv-num">500 V</td>
-              <td class="inv-num">40 V</td><td class="inv-num">450 V</td>
-              <td class="inv-num">13,5 A</td><td class="inv-num">97,5 %</td>
-              <td><span class="status-pill status-pill--warn"><span class="status-dot"></span>Subdimensionado</span></td>
+              <td class="inv-name">Deye SUN-1K-G04P1</td>
+              <td class="inv-num">1.000 W</td><td class="inv-num">550 V</td>
+              <td class="inv-num" style="color:#c84444;font-weight:500">70 V</td><td class="inv-num">500 V</td>
+              <td class="inv-num">16 A</td><td class="inv-num">97,6 %</td>
+              <td><span class="status-pill status-pill--error"><span class="status-dot"></span>INCOMPATIBLE</span></td>
             </tr>
             <tr class="inv-optimal">
-              <td class="inv-name">Deye SUN-1K-G</td>
-              <td class="inv-num">1.000 W</td><td class="inv-num">550 V</td>
-              <td class="inv-num">60 V</td><td class="inv-num">500 V</td>
-              <td class="inv-num">16 A</td><td class="inv-num">97,6 %</td>
-              <td><span class="status-pill status-pill--ok"><span class="status-dot"></span>ÓPTIMO</span></td>
+              <td class="inv-name">Growatt MIC 1000TL-X2</td>
+              <td class="inv-num">1.000 W</td><td class="inv-num">500 V</td>
+              <td class="inv-num" style="color:#1db88a;font-weight:500">50 V</td><td class="inv-num">500 V</td>
+              <td class="inv-num">22 A</td><td class="inv-num">97,4 %</td>
+              <td><span class="status-pill status-pill--ok"><span class="status-dot"></span>SELECCIONADO</span></td>
             </tr>
             <tr>
-              <td class="inv-name">Fronius Primo 1.5-1</td>
-              <td class="inv-num">1.500 W</td><td class="inv-num">600 V</td>
-              <td class="inv-num">80 V</td><td class="inv-num">800 V</td>
-              <td class="inv-num">12 A</td><td class="inv-num">96,8 %</td>
-              <td><span class="status-pill status-pill--error"><span class="status-dot"></span>MPPT mín alto</span></td>
+              <td class="inv-name">Sungrow SG3K-S</td>
+              <td class="inv-num">3.000 W</td><td class="inv-num">600 V</td>
+              <td class="inv-num">40 V</td><td class="inv-num">560 V</td>
+              <td class="inv-num">12,5 A</td><td class="inv-num">97,5 %</td>
+              <td><span class="status-pill status-pill--warn"><span class="status-dot"></span>Sobredimensionado</span></td>
             </tr>
           </tbody>
         </table>
       </div>
+      <div class="info-callout" style="margin-top:16px;margin-bottom:0">
+        <div class="ic-title">Por qué el Deye SUN-1K-G04P1 es incompatible</div>
+        El V<sub>mpp</sub> del string baja a <strong>66,42 V</strong> al mediodía bajo calor extremo (T<sub>celd</sub> = 63,25 °C). El MPPT mínimo del Deye es <strong>70 V</strong> → el string queda <strong>3,6 V por debajo</strong> del rango → pérdida de seguimiento 1–2 h/día durante los meses más cálidos. El Growatt MIC 1000TL-X2 tiene MPPT mínimo de <strong>50 V</strong> → margen de +16,4 V garantizado.
+      </div>
     </div>
 
-    <!-- Card inversor seleccionado: Deye SUN-1K-G -->
+    <!-- Card inversor seleccionado: Growatt MIC 1000TL-X2 -->
     <div class="inverter-selected-card">
-      <div class="module-mark">DY</div>
+      <div class="module-mark">GW</div>
       <div>
-        <div class="module-info-brand">Deye · String Inverter · Tier 1</div>
-        <div class="module-info-model">SUN-1K-G</div>
+        <div class="module-info-brand">Growatt · String Inverter · Tier 1</div>
+        <div class="module-info-model">MIC 1000TL-X2</div>
         <div class="module-specs">
           <div class="module-spec">
             <span class="module-spec-k">P nominal AC</span>
@@ -3418,65 +3401,79 @@ section {
           </div>
           <div class="module-spec">
             <span class="module-spec-k">V<sub>DC</sub> máximo</span>
-            <span class="module-spec-v"><em>550 V</em></span>
+            <span class="module-spec-v"><em>500 V</em></span>
           </div>
           <div class="module-spec">
             <span class="module-spec-k">Rango MPPT</span>
-            <span class="module-spec-v">60 – 500 V</span>
+            <span class="module-spec-v">50 – 500 V</span>
           </div>
           <div class="module-spec">
             <span class="module-spec-k">I<sub>DC</sub> máx.</span>
-            <span class="module-spec-v">16 A</span>
+            <span class="module-spec-v">22 A</span>
+          </div>
+          <div class="module-spec">
+            <span class="module-spec-k">η máxima</span>
+            <span class="module-spec-v"><em>97,4 %</em></span>
+          </div>
+          <div class="module-spec">
+            <span class="module-spec-k">Protección</span>
+            <span class="module-spec-v">IP66</span>
+          </div>
+          <div class="module-spec">
+            <span class="module-spec-k">Garantía</span>
+            <span class="module-spec-v">10 años</span>
           </div>
           <div class="module-spec">
             <span class="module-spec-k">Certificaciones</span>
             <span class="module-spec-v">RETIE · CE · IEC 62109</span>
+          </div>
+          <div class="module-spec">
+            <span class="module-spec-k">Comunicación</span>
+            <span class="module-spec-v">WiFi / RS485</span>
           </div>
         </div>
         <!-- Grid de compatibilidad 2×2 -->
         <div class="compat-grid" style="margin-top:24px">
           <div class="compat-cell">
             <div class="compat-param">V<sub>DC</sub> abs. máx.</div>
-            <div class="compat-inv">550 V</div>
-            <div class="compat-str">String (×1,25): 115,1 V</div>
-            <div class="compat-margin">Margen: 79 %</div>
+            <div class="compat-inv">500 V</div>
+            <div class="compat-str">String (×1,25): 115,2 V</div>
+            <div class="compat-margin">Margen: 77 %</div>
             <span class="status-pill status-pill--ok"><span class="status-dot"></span>OK</span>
           </div>
           <div class="compat-cell">
             <div class="compat-param">MPPT mínimo</div>
-            <div class="compat-inv">60 V</div>
-            <div class="compat-str">V<sub>mpp,min</sub> string: 69,8 V</div>
-            <div class="compat-margin">+8,9 V sobre el límite</div>
+            <div class="compat-inv">50 V</div>
+            <div class="compat-str">V<sub>mpp,min</sub> string: 66,42 V</div>
+            <div class="compat-margin">+16,4 V sobre el límite</div>
             <span class="status-pill status-pill--ok"><span class="status-dot"></span>OK</span>
           </div>
           <div class="compat-cell">
             <div class="compat-param">MPPT máximo</div>
             <div class="compat-inv">500 V</div>
-            <div class="compat-str">V<sub>mpp</sub> normal: ~71 V</div>
-            <div class="compat-margin">Margen amplio (>85 %)</div>
+            <div class="compat-str">V<sub>mpp</sub> normal: ~70 V</div>
+            <div class="compat-margin">Margen amplio (>86 %)</div>
             <span class="status-pill status-pill--ok"><span class="status-dot"></span>OK</span>
           </div>
           <div class="compat-cell">
             <div class="compat-param">I<sub>DC</sub> máximo</div>
-            <div class="compat-inv">16 A</div>
-            <div class="compat-str">I<sub>sc</sub>×1,25: 17,3 A · I<sub>mpp</sub>: 13,1 A</div>
-            <div class="compat-margin">Fusible DC protege el inversor</div>
-            <span class="status-pill status-pill--warn"><span class="status-dot"></span>Ver nota</span>
+            <div class="compat-inv">22 A</div>
+            <div class="compat-str">I<sub>sc</sub>×1,25: 17,4 A · I<sub>mpp</sub>: 13,0 A</div>
+            <div class="compat-margin">Margen: 26 %</div>
+            <span class="status-pill status-pill--ok"><span class="status-dot"></span>OK</span>
           </div>
         </div>
       </div>
-      <div class="module-note">Inversor de alta eficiencia con soporte técnico y distribución confirmada en Colombia. Diseñado para aplicaciones residenciales con MPPT de rango amplio, comunicación WiFi/RS485 y protección anti-isla integrada certificada bajo IEC 62109.</div>
+      <div class="module-note">Growatt es el fabricante de inversores con mayor volumen de envíos en Colombia. El MIC 1000TL-X2 ofrece MPPT desde 50 V garantizando seguimiento continuo aun cuando el string baja a 66,42 V al mediodía. IP66, garantía 10 años y monitoreo en tiempo real vía app ShinePhone.</div>
     </div>
 
-    <!-- Callout observación I_DC -->
-    <div class="info-callout" style="margin-bottom:32px">
-      <div class="ic-title">Observación técnica · Corriente DC</div>
-      La corriente I<sub>sc</sub> del string (13,93 A) con el factor de seguridad NTC 2050 Art. 690.8 (×1,25) da <strong>17,4 A</strong>, que excede ligeramente el I<sub>DC</sub> máximo del Deye (16 A). En operación real, la corriente es I<sub>mpp</sub> = 13,04 A — muy por debajo del límite. El factor ×1,25 es un <strong>margen normativo de seguridad</strong>, no una corriente de operación continua.
-      <ul class="reasons-list" style="margin-top:12px">
-        <li>Fusible DC del string (gPV 20 A) protege ante sobrecorriente antes de llegar al inversor.</li>
-        <li>La corriente real en Neiva nunca alcanza I<sub>sc</sub> STC: el calentamiento de celda (~63 °C al mediodía) la reduce respecto a STC.</li>
-        <li>Deye tiene protección interna contra sobrecorriente y desconexión automática integrada certificada.</li>
-      </ul>
+    <!-- Decision card Growatt -->
+    <div class="decision-card" style="margin-top:24px;margin-bottom:32px">
+      <div class="decision-card-eyebrow">Criterio decisivo · MPPT</div>
+      <div class="decision-card-title">El Growatt MIC 1000TL-X2 es el único modelo del rango 1 kW disponible en Colombia con MPPT mínimo ≤ 66 V</div>
+      <div class="decision-card-body">
+        El V<sub>mpp</sub> del string cae a <strong>66,42 V</strong> a las 12:00 h durante los meses de mayor irradiancia (T<sub>celd</sub> = 63,25 °C en Neiva). El Deye SUN-1K-G04P1 tiene MPPT mínimo de 70 V → pierde tracking durante 1–2 h/día. El Growatt MIC 1000TL-X2 arranca MPPT desde 50 V, lo que garantiza seguimiento continuo con un margen de <strong>+16,4 V</strong>. El Sungrow SG3K-S cumple pero está sobredimensionado en 3×, penalizando el PR a cargas parciales.
+      </div>
     </div>
 
     <!-- Ratio DC:AC -->
@@ -3514,12 +3511,12 @@ section {
       <div class="chart-sub">Desglose de pérdidas que explican el PR = 0,74 usado desde el inicio del proyecto</div>
       <table class="pr-table">
         <tbody>
-          <tr><td class="pr-source">Pérdida térmica (calculada en § 05.3-C)</td><td class="pr-pct">11,5 %</td></tr>
+          <tr><td class="pr-source">Pérdida térmica (calculada en § 05.3-C)</td><td class="pr-pct">13,4 %</td></tr>
           <tr><td class="pr-source">Pérdidas ópticas + suciedad</td><td class="pr-pct">4,0 %</td></tr>
           <tr><td class="pr-source">Pérdidas eléctricas (cableado, conexiones)</td><td class="pr-pct">3,0 %</td></tr>
-          <tr><td class="pr-source">Eficiencia inversor (1 − 97,6 %)</td><td class="pr-pct">2,4 %</td></tr>
+          <tr><td class="pr-source">Eficiencia inversor (1 − 97,4 %)</td><td class="pr-pct">2,6 %</td></tr>
           <tr><td class="pr-source">Mismatch entre módulos</td><td class="pr-pct">2,0 %</td></tr>
-          <tr><td class="pr-source">Otras pérdidas</td><td class="pr-pct">3,1 %</td></tr>
+          <tr><td class="pr-source">Otras pérdidas</td><td class="pr-pct">1,0 %</td></tr>
         </tbody>
         <tfoot>
           <tr><td>Pérdidas totales</td><td class="pr-pct">26,0 %</td></tr>
@@ -3664,47 +3661,47 @@ section {
             <tr>
               <td class="cmp-var">T<sub>celd</sub> máxima</td>
               <td>—</td>
-              <td class="col-ours">58,25 °C</td>
+              <td class="col-ours">63,25 °C</td>
             </tr>
             <tr>
               <td class="cmp-var">T<sub>celd</sub> mínima</td>
               <td>—</td>
-              <td class="col-ours">20,6 °C</td>
+              <td class="col-ours">21,1 °C</td>
             </tr>
             <tr class="cmp-result">
               <td class="cmp-var">V<sub>oc</sub> string máximo</td>
               <td>—</td>
-              <td class="col-ours">92,3 V</td>
+              <td class="col-ours">92,16 V</td>
             </tr>
             <tr>
               <td class="cmp-var">ΔT máxima</td>
               <td>37,25 °C</td>
-              <td class="col-ours">33,25 °C</td>
+              <td class="col-ours">38,25 °C</td>
             </tr>
             <tr>
               <td class="cmp-var">ΔT mínima</td>
               <td>−1,0 °C</td>
-              <td class="col-ours">−4,4 °C</td>
+              <td class="col-ours">−3,9 °C</td>
             </tr>
             <tr>
               <td class="cmp-var">V<sub>oc,max</sub> por módulo</td>
               <td>50,2 V</td>
-              <td class="col-ours">46,1 V</td>
+              <td class="col-ours">46,08 V</td>
             </tr>
             <tr>
-              <td class="cmp-var">V<sub>mpp</sub> en operación</td>
+              <td class="cmp-var">V<sub>mpp,min</sub> por módulo</td>
               <td>41,3 V</td>
-              <td class="col-ours">35,8 V</td>
+              <td class="col-ours">33,21 V</td>
             </tr>
             <tr>
               <td class="cmp-var">% pérdida térmica</td>
               <td>9,7 %</td>
-              <td class="col-ours">11,6 %</td>
+              <td class="col-ours">13,4 %</td>
             </tr>
             <tr>
               <td class="cmp-var">P<sub>mpp</sub> real por módulo</td>
               <td>605 W</td>
-              <td class="col-ours">442 W</td>
+              <td class="col-ours">433 W</td>
             </tr>
             <tr class="cmp-result">
               <td class="cmp-var">Configuración</td>
@@ -3714,7 +3711,7 @@ section {
             <tr class="cmp-result">
               <td class="cmp-var">Inversor seleccionado</td>
               <td>—</td>
-              <td class="col-ours">Deye SUN-1K-G</td>
+              <td class="col-ours">Growatt MIC 1000TL-X2</td>
             </tr>
           </tbody>
         </table>
@@ -3739,14 +3736,14 @@ section {
     <div class="spec">
       <div class="spec-num">INVERSOR</div>
       <div class="spec-val">1 × 1,0 kW</div>
-      <div class="spec-title">Deye SUN-1K-G</div>
-      <div class="spec-desc">String monofásico 240 V · MPPT 60–500 V · η 97,6% · V<sub>DC,max</sub> 550 V · protección anti-isla certificada IEC 62109.</div>
+      <div class="spec-title">Growatt MIC 1000TL-X2</div>
+      <div class="spec-desc">String monofásico 240 V · MPPT 50–500 V · η 97,4% · V<sub>DC,max</sub> 500 V · IP66 · garantía 10 años · anti-isla IEC 62109.</div>
     </div>
     <div class="spec">
       <div class="spec-num">CONFIGURACIÓN</div>
       <div class="spec-val">2S × 1P</div>
       <div class="spec-title">Un solo string</div>
-      <div class="spec-desc">Dos módulos en serie, un string en paralelo. V<sub>oc</sub> string máx. 92,3 V · V<sub>mpp</sub> 69,8–71,5 V — dentro del rango MPPT del Deye SUN-1K-G (60–500 V).</div>
+      <div class="spec-desc">Dos módulos en serie, un string en paralelo. V<sub>oc</sub> string máx. 92,16 V · V<sub>mpp</sub> 66,42–70,04 V — dentro del rango MPPT del Growatt MIC 1000TL-X2 (50–500 V).</div>
     </div>
     <div class="spec">
       <div class="spec-num">ÁREA</div>
@@ -3891,9 +3888,9 @@ section {
     <div class="prot-side">
       <h4>Lado DC · NTC 2050 Art. 690</h4>
       <ul>
-        <li>Conductor PV Wire #12 AWG (90 °C, UV), I<sub>cap</sub> = 30 A &gt; 27,2 A req. · ΔV = 2,13 %</li>
+        <li>Conductor PV Wire #12 AWG (90 °C, UV), I<sub>cap</sub> = 30 A &gt; 23,9 A req. · ΔV = 2,25 %</li>
         <li>Fusible gPV 25 A / 1 000 V en cada polaridad — dimensionado a ≥ 1,56 × I<sub>sc</sub> = 21,7 A</li>
-        <li>Desconectador DC 25 A / 600 V accesible, cumple V<sub>oc,max</sub> = 92,3 V × 1,25</li>
+        <li>Desconectador DC 25 A / 600 V accesible, cumple V<sub>oc,max</sub> = 92,16 V × 1,25</li>
         <li>DPS Tipo II / 1 000 V / 20 kA — protección contra transitorios atmosféricos</li>
         <li>SPT equipotencial: marcos de módulos, estructura y referencia negativa del inversor</li>
       </ul>
@@ -3981,15 +3978,15 @@ section {
           <span class="eq-op">&nbsp;=&nbsp;</span>
           <span class="eq-fraction">
             <span class="eq-num">21,8 A</span>
-            <span class="eq-den">0,88 × 0,91</span>
+            <span class="eq-den">0,91 × 1,00</span>
           </span>
         </div>
         <div class="eq-numeric">
-          F<sub>T</sub> = 0,88 (40 °C ambiente) · F<sub>ag</sub> = 0,91 (2 conductores en canaleta)
+          F<sub>T</sub> = 0,91 (45 °C ambiente) · F<sub>ag</sub> = 1,00 (conductor único)
         </div>
         <div class="eq-result-box">
           <span class="eq-result-label"><em>I<sub>req</sub></em> =</span>
-          <span class="eq-result-val">27,2 A</span>
+          <span class="eq-result-val">23,9 A</span>
           <span style="margin-left:16px; font-size:13px; color:rgba(245,239,224,0.55)">→ #12 AWG PV Wire (I<sub>cap</sub> = 30 A ✓)</span>
         </div>
         <table class="eq-mini-table">
@@ -3998,16 +3995,16 @@ section {
           </thead>
           <tbody>
             <tr><td>#14 AWG</td><td>20 A</td><td style="color:#c84444">✗ insuficiente</td><td>—</td></tr>
-            <tr class="mt-selected"><td>#12 AWG</td><td>30 A</td><td style="color:#1db88a">✓ seleccionado</td><td>2,13 %</td></tr>
-            <tr><td>#10 AWG</td><td>40 A</td><td style="color:rgba(245,239,224,0.4)">— sobredimensionado</td><td>1,49 %</td></tr>
+            <tr class="mt-selected"><td>#12 AWG</td><td>30 A</td><td style="color:#1db88a">✓ seleccionado</td><td>2,25 %</td></tr>
+            <tr><td>#10 AWG</td><td>40 A</td><td style="color:rgba(245,239,224,0.4)">— sobredimensionado</td><td>1,41 %</td></tr>
           </tbody>
         </table>
       </div>
       <div class="eq-desc">
         Caída de tensión DC: ΔV = 2 × L × I<sub>dis</sub> × ρ / V<sub>mpp</sub> =
-        2 × 12 m × 13,04 A × 0,00521 Ω/m / 76,7 V = <strong>2,13 %</strong>
+        2 × 12 m × 13,04 A × 0,00521 Ω/m / 72,33 V = <strong>2,25 %</strong>
         — dentro del límite RETIE ≤ 3 %.
-        Factor de temperatura para 40 °C / conductor 90 °C según NTC 2050 Tabla 310.16.
+        Factor de temperatura F<sub>T</sub> = 0,91 para 45 °C / conductor 90 °C según NTC 2050 Tabla 310.16.
       </div>
     </div>
 
@@ -4026,15 +4023,15 @@ section {
           <span class="eq-op">&nbsp;=&nbsp;</span>
           <span class="eq-fraction">
             <span class="eq-num">5,2 A</span>
-            <span class="eq-den">0,88 × 0,91</span>
+            <span class="eq-den">0,91 × 1,00</span>
           </span>
         </div>
         <div class="eq-numeric">
-          Mismos factores de corrección que circuito DC (condiciones de instalación equivalentes)
+          Mismos factores de corrección que circuito DC (F<sub>T</sub> = 0,91 · F<sub>ag</sub> = 1,00)
         </div>
         <div class="eq-result-box">
           <span class="eq-result-label"><em>I<sub>req,AC</sub></em> =</span>
-          <span class="eq-result-val">6,5 A</span>
+          <span class="eq-result-val">5,7 A</span>
           <span style="margin-left:16px; font-size:13px; color:rgba(245,239,224,0.55)">→ #12 AWG THHN (I<sub>cap</sub> = 20 A ✓)</span>
         </div>
         <table class="eq-mini-table">
@@ -4072,7 +4069,7 @@ section {
           <div class="csc-row"><span class="csc-key">Temperatura</span><span class="csc-val">90 °C (húmedo)</span></div>
           <div class="csc-row"><span class="csc-key">Resistividad</span><span class="csc-val">ρ = 0,00521 Ω/m</span></div>
           <div class="csc-row"><span class="csc-key">Longitud (un lado)</span><span class="csc-val">12 m</span></div>
-          <div class="csc-row"><span class="csc-key">ΔV calculada</span><span class="csc-val">2,13 % ≤ 3 % ✓</span></div>
+          <div class="csc-row"><span class="csc-key">ΔV calculada</span><span class="csc-val">2,25 % ≤ 3 % ✓</span></div>
           <div class="csc-row"><span class="csc-key">Referencia</span><span class="csc-val">NTC 2050 Art. 690.31</span></div>
         </div>
         <div class="csc-col">
@@ -4395,7 +4392,7 @@ section {
             <td><span class="zone-badge zone-badge--dc">DC</span></td>
             <td class="pmt-device">DPS DC Tipo II</td>
             <td class="pmt-spec">1 000 V · 20 kA</td>
-            <td>U<sub>c</sub> ≥ V<sub>oc,max</sub> = 92,3 V</td>
+            <td>U<sub>c</sub> ≥ V<sub>oc,max</sub> = 92,16 V</td>
             <td class="pmt-norm">IEC 61643-31</td>
           </tr>
           <tr>
@@ -4435,7 +4432,7 @@ section {
             <td><span class="zone-badge zone-badge--dc">DC</span></td>
             <td class="pmt-device">Conductor PV Wire</td>
             <td class="pmt-spec">#12 AWG · 2 000 V DC</td>
-            <td>I<sub>req</sub> = 27,2 A; ΔV = 2,13 %</td>
+            <td>I<sub>req</sub> = 23,9 A; ΔV = 2,25 %</td>
             <td class="pmt-norm">NTC 2050 690.31</td>
           </tr>
           <tr>
@@ -4443,7 +4440,7 @@ section {
             <td><span class="zone-badge zone-badge--ac">AC</span></td>
             <td class="pmt-device">Conductor THHN</td>
             <td class="pmt-spec">#12 AWG · 600 V AC</td>
-            <td>I<sub>req</sub> = 6,5 A; ΔV = 0,27 %</td>
+            <td>I<sub>req</sub> = 5,7 A; ΔV = 0,27 %</td>
             <td class="pmt-norm">NTC 2050 310.15</td>
           </tr>
         </tbody>
