@@ -2005,37 +2005,7 @@ section {
     <div class="location-card">
       <h3>Neiva · Huila</h3>
       <div class="coords">2.931384° N / 75.260102° W</div>
-      <svg class="location-svg" viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg">
-        <!-- Silueta estilizada del departamento del Huila -->
-        <defs>
-          <radialGradient id="dot-glow" cx="50%" cy="50%" r="50%">
-            <stop offset="0%" stop-color="#ffb547" stop-opacity="0.8"/>
-            <stop offset="100%" stop-color="#ffb547" stop-opacity="0"/>
-          </radialGradient>
-        </defs>
-        <g fill="none" stroke="rgba(245,239,224,0.2)" stroke-width="0.5">
-          <path d="M80 30 L140 25 L175 40 L195 70 L210 110 L200 145 L175 175 L150 195 L115 200 L85 180 L70 145 L60 105 L65 65 Z"
-                stroke="rgba(255,181,71,0.6)" stroke-width="1" fill="rgba(255,181,71,0.04)"/>
-        </g>
-        <!-- Río Magdalena estilizado -->
-        <path d="M140 30 Q135 70, 145 110 Q150 150, 140 195"
-              fill="none" stroke="rgba(135,180,220,0.35)" stroke-width="1.2"/>
-        <!-- Punto de Neiva -->
-        <circle cx="145" cy="95" r="22" fill="url(#dot-glow)"/>
-        <circle cx="145" cy="95" r="4" fill="#ffb547"/>
-        <circle cx="145" cy="95" r="8" fill="none" stroke="#ffb547" stroke-width="1">
-          <animate attributeName="r" from="4" to="16" dur="2s" repeatCount="indefinite"/>
-          <animate attributeName="opacity" from="1" to="0" dur="2s" repeatCount="indefinite"/>
-        </circle>
-        <text x="155" y="92" fill="#f5efe0" font-family="Manrope" font-size="12" font-weight="500">Neiva</text>
-        <text x="155" y="105" fill="#8a8373" font-family="JetBrains Mono" font-size="8">CAPITAL</text>
-        <!-- Rosa de los vientos mínima -->
-        <g transform="translate(260,180)" fill="#8a8373" font-family="JetBrains Mono" font-size="8">
-          <line x1="0" y1="-10" x2="0" y2="10" stroke="#8a8373" stroke-width="0.5"/>
-          <line x1="-10" y1="0" x2="10" y2="0" stroke="#8a8373" stroke-width="0.5"/>
-          <text x="-3" y="-13">N</text>
-        </g>
-      </svg>
+      <img src="assets/images/Mapa_neiva.png" alt="Mapa de Neiva · Huila · Colombia" style="width:100%;display:block;border-radius:4px;margin-top:12px;"/>
     </div>
   </div>
 </section>
@@ -4599,7 +4569,8 @@ section {
     <div class="map-card expandable" onclick="openLightbox(this)">
       <div class="map-img-wrap">
         <img
-          src="assets/images/Mapa_neiva.png"
+          src="assets/images/mapa-electrohuila.png"
+          onerror="this.src='assets/images/mapa-electrohuila-placeholder.svg'"
           alt="Mapa de Capacidad Disponible de Electrohuila mostrando el predio ubicado en Calle 8B #38-12 de Neiva, dentro de una zona con capacidad disponible 0-30%"
         />
         <div class="map-img-overlay"></div>
