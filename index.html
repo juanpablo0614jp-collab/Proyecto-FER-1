@@ -1620,7 +1620,7 @@ section {
 
 /* Protections card grid */
 .prot-cards-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
   margin-top: 24px;
 }
 .prot-card {
@@ -3788,15 +3788,14 @@ section {
       <path class="unif-line" d="M 110 120 L 180 120" marker-end="url(#arrow)"/>
       <text x="145" y="112" class="unif-t-s" text-anchor="middle">#12 AWG PV Wire</text>
 
-      <!-- Caja de combinación DC (DPS + Fusible + Interruptor DC) -->
+      <!-- Caja de combinación DC (DPS + Interruptor DC) -->
       <g transform="translate(185,80)">
         <rect class="unif-box" x="0" y="0" width="120" height="80" rx="2"/>
         <text x="60" y="30" class="unif-t" text-anchor="middle">Combiner DC</text>
-        <text x="60" y="48" class="unif-t-s" text-anchor="middle">FUSIBLE 25A · gPV</text>
-        <text x="60" y="62" class="unif-t-s" text-anchor="middle">DPS TIPO II · 1000V</text>
-        <text x="60" y="76" class="unif-t-s" text-anchor="middle">DESC. 25A · 600 V DC</text>
+        <text x="60" y="52" class="unif-t-s" text-anchor="middle">DPS TIPO II · 1000V</text>
+        <text x="60" y="68" class="unif-t-s" text-anchor="middle">DESC. 25A · 600 V DC</text>
         <text x="60" y="105" class="unif-t" text-anchor="middle">Protección DC</text>
-        <text x="60" y="118" class="unif-t-s" text-anchor="middle">NTC 2050 690.9</text>
+        <text x="60" y="118" class="unif-t-s" text-anchor="middle">NTC 2050 690.13</text>
       </g>
 
       <path class="unif-line" d="M 305 120 L 370 120" marker-end="url(#arrow)"/>
@@ -3820,9 +3819,8 @@ section {
       <g transform="translate(585,80)">
         <rect class="unif-box" x="0" y="0" width="110" height="80" rx="2"/>
         <text x="55" y="30" class="unif-t" text-anchor="middle">Tablero AC</text>
-        <text x="55" y="48" class="unif-t-s" text-anchor="middle">BREAKER 10A · CURVA C</text>
-        <text x="55" y="62" class="unif-t-s" text-anchor="middle">DIFER. 30mA · TIPO A</text>
-        <text x="55" y="76" class="unif-t-s" text-anchor="middle">DPS AC · 240V/20kA</text>
+        <text x="55" y="52" class="unif-t-s" text-anchor="middle">BREAKER 10A · CURVA C</text>
+        <text x="55" y="68" class="unif-t-s" text-anchor="middle">DIFER. 30mA · TIPO A</text>
         <text x="55" y="105" class="unif-t" text-anchor="middle">Protección AC</text>
         <text x="55" y="118" class="unif-t-s" text-anchor="middle">RETIE</text>
       </g>
@@ -3859,8 +3857,7 @@ section {
       <h4>Lado DC · NTC 2050 Art. 690</h4>
       <ul>
         <li>Conductor PV Wire #12 AWG (90 °C, UV), I<sub>cap</sub> = 30 A &gt; 23,9 A req. · ΔV = 2,25 %</li>
-        <li>Fusible gPV 25 A / 1 000 V en cada polaridad — dimensionado a ≥ 1,56 × I<sub>sc</sub> = 21,7 A</li>
-        <li>Desconectador DC 25 A / 600 V accesible, cumple V<sub>oc,max</sub> = 92,16 V × 1,25</li>
+        <li>Interruptor de desconexión 25 A · 600 V DC bipolar — cumple V<sub>oc,max</sub> = 92,16 V × 1,25</li>
         <li>DPS Tipo II / 1 000 V / 20 kA — protección contra transitorios atmosféricos</li>
         <li>SPT equipotencial: marcos de módulos, estructura y referencia negativa del inversor</li>
       </ul>
@@ -3868,10 +3865,9 @@ section {
     <div class="prot-side">
       <h4>Lado AC · RETIE Res. 40117/2024</h4>
       <ul>
-        <li>Conductor THHN #12 AWG en tubería EMT, I<sub>cap</sub> = 20 A &gt; 6,5 A req. · ΔV = 0,27 %</li>
+        <li>Conductor THHN #12 AWG en tubería EMT, I<sub>cap</sub> = 20 A &gt; 5,7 A req. · ΔV = 0,27 %</li>
         <li>Breaker termomagnético 10 A Curva C — dimensionado a ≥ 1,25 × I<sub>AC,nom</sub> = 5,2 A</li>
         <li>Diferencial 30 mA Tipo A — sensible a corrientes de fuga sinusoidales y pulsantes (CC)</li>
-        <li>DPS AC Tipo II / 240 V / 20 kA en tablero principal</li>
         <li>Medidor bidireccional homologado por Electrohuila (norma SUI/CREG)</li>
       </ul>
     </div>
@@ -4075,37 +4071,6 @@ section {
         <span style="font-size:12px; color:rgba(245,239,224,0.45); font-family:'JetBrains Mono',monospace; letter-spacing:0.06em">NTC 2050 · ART. 690.9</span>
       </div>
       <div class="prot-cards-grid">
-        <!-- B1 Fusible gPV -->
-        <div class="prot-card prot-card--dc">
-          <div class="prot-card-eyebrow">
-            <span class="prot-card-id">B1</span>
-            <span class="zone-badge zone-badge--dc">DC</span>
-          </div>
-          <div class="prot-card-name">Fusible gPV</div>
-          <div class="prot-card-spec">25 A · 1 000 V DC</div>
-          <div class="prot-spec-rows">
-            <div class="prot-spec-row">
-              <span class="psr-key">Criterio</span>
-              <span class="psr-val">≥ 1,56 × I<sub>sc</sub></span>
-            </div>
-            <div class="prot-spec-row">
-              <span class="psr-key">Mínimo requerido</span>
-              <span class="psr-val">21,7 A</span>
-            </div>
-            <div class="prot-spec-row">
-              <span class="psr-key">Seleccionado</span>
-              <span class="psr-val">25 A ✓</span>
-            </div>
-            <div class="prot-spec-row">
-              <span class="psr-key">Tensión nominal</span>
-              <span class="psr-val">1 000 V DC</span>
-            </div>
-            <div class="prot-spec-row">
-              <span class="psr-key">Norma</span>
-              <span class="psr-val">IEC 60269-6 gPV</span>
-            </div>
-          </div>
-        </div>
         <!-- B2 Desconectador DC -->
         <div class="prot-card prot-card--dc">
           <div class="prot-card-eyebrow">
@@ -4240,37 +4205,6 @@ section {
             </div>
           </div>
         </div>
-        <!-- B6 DPS AC -->
-        <div class="prot-card prot-card--ac">
-          <div class="prot-card-eyebrow">
-            <span class="prot-card-id">B6</span>
-            <span class="zone-badge zone-badge--ac">AC</span>
-          </div>
-          <div class="prot-card-name">DPS AC Tipo II</div>
-          <div class="prot-card-spec">240 V · 20 kA</div>
-          <div class="prot-spec-rows">
-            <div class="prot-spec-row">
-              <span class="psr-key">Tensión nominal</span>
-              <span class="psr-val">230/240 V AC</span>
-            </div>
-            <div class="prot-spec-row">
-              <span class="psr-key">Corriente nominal</span>
-              <span class="psr-val">I<sub>n</sub> = 20 kA</span>
-            </div>
-            <div class="prot-spec-row">
-              <span class="psr-key">Nivel protección</span>
-              <span class="psr-val">U<sub>p</sub> ≤ 1,5 kV</span>
-            </div>
-            <div class="prot-spec-row">
-              <span class="psr-key">Ubicación</span>
-              <span class="psr-val">Tablero principal</span>
-            </div>
-            <div class="prot-spec-row">
-              <span class="psr-key">Norma</span>
-              <span class="psr-val">IEC 61643-11</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
@@ -4342,14 +4276,6 @@ section {
         </thead>
         <tbody>
           <tr>
-            <td class="pmt-id">B1</td>
-            <td><span class="zone-badge zone-badge--dc">DC</span></td>
-            <td class="pmt-device">Fusible gPV</td>
-            <td class="pmt-spec">25 A · 1 000 V DC</td>
-            <td>≥ 1,56 × I<sub>sc</sub> = 21,7 A</td>
-            <td class="pmt-norm">IEC 60269-6</td>
-          </tr>
-          <tr>
             <td class="pmt-id">B2</td>
             <td><span class="zone-badge zone-badge--dc">DC</span></td>
             <td class="pmt-device">Desconectador DC</td>
@@ -4380,14 +4306,6 @@ section {
             <td class="pmt-spec">30 mA · 25 A · 240 V</td>
             <td>Fuga CC pulsante (IGBT)</td>
             <td class="pmt-norm">IEC 61008-1</td>
-          </tr>
-          <tr>
-            <td class="pmt-id">B6</td>
-            <td><span class="zone-badge zone-badge--ac">AC</span></td>
-            <td class="pmt-device">DPS AC Tipo II</td>
-            <td class="pmt-spec">240 V · 20 kA</td>
-            <td>Tablero principal · U<sub>p</sub> ≤ 1,5 kV</td>
-            <td class="pmt-norm">IEC 61643-11</td>
           </tr>
           <tr>
             <td class="pmt-id">B7</td>
