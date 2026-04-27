@@ -1278,12 +1278,6 @@ section {
 @media (max-width: 780px) { .compat-grid { grid-template-columns: 1fr; } }
 
 /* ===========  PR BREAKDOWN TABLE  =========== */
-.pr-table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 20px; }
-.pr-table tbody td { padding: 8px 16px; border-bottom: 0.5px solid var(--line); color: var(--ink-2); font-weight: 300; }
-.pr-table tbody td.pr-source { color: var(--ink); }
-.pr-table tbody td.pr-pct { font-family: 'JetBrains Mono', monospace; font-size: 13px; text-align: right; }
-.pr-table tfoot td { padding: 10px 16px; border-top: 1px solid var(--line-2); font-weight: 500; color: var(--ink); }
-.pr-table tfoot td.pr-pct { color: var(--sun); font-family: 'JetBrains Mono', monospace; font-size: 13px; text-align: right; }
 
 /* ===========  REASONS LIST  =========== */
 .reasons-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
@@ -3177,7 +3171,7 @@ section {
           <span class="eq-result-val">433 W / módulo</span>
         </div>
       </div>
-      <div class="eq-desc">Esto valida el PR = 0,74 del dimensionamiento. La pérdida térmica del 13,4%, más pérdidas ópticas, cableado, inversor y suciedad, dan ~26% total (PR efectivo ≈ 0,74).</div>
+      <div class="eq-desc">La pérdida térmica del 13,4% es la mayor fuente individual de pérdidas del sistema, coherente con el PR = 0,74 adoptado en el dimensionamiento (PVWatts, Neiva).</div>
     </div>
 
     <!-- Métricas: potencia real del sistema -->
@@ -3473,30 +3467,6 @@ section {
         </div>
       </div>
       <div class="eq-desc">Ratio ideal para climas con alta irradiancia y pérdidas térmicas significativas. Un ratio de 1,0 garantiza que el inversor no limita la producción en los picos del mediodía en Neiva.</div>
-    </div>
-
-    <!-- PR desglose / validación -->
-    <div class="pvw-card">
-      <h3>Validación del Performance Ratio</h3>
-      <div class="chart-sub">Desglose de pérdidas que explican el PR = 0,74 usado desde el inicio del proyecto</div>
-      <table class="pr-table">
-        <tbody>
-          <tr><td class="pr-source">Pérdida térmica (calculada en § 05.3-C)</td><td class="pr-pct">13,4 %</td></tr>
-          <tr><td class="pr-source">Pérdidas ópticas + suciedad</td><td class="pr-pct">4,0 %</td></tr>
-          <tr><td class="pr-source">Pérdidas eléctricas (cableado, conexiones)</td><td class="pr-pct">3,0 %</td></tr>
-          <tr><td class="pr-source">Eficiencia inversor (1 − 97,4 %)</td><td class="pr-pct">2,6 %</td></tr>
-          <tr><td class="pr-source">Mismatch entre módulos</td><td class="pr-pct">2,0 %</td></tr>
-          <tr><td class="pr-source">Otras pérdidas</td><td class="pr-pct">1,0 %</td></tr>
-        </tbody>
-        <tfoot>
-          <tr><td>Pérdidas totales</td><td class="pr-pct">26,0 %</td></tr>
-        </tfoot>
-      </table>
-      <div class="eq-result-box" style="margin-top:16px">
-        <span class="eq-result-label">PR efectivo&nbsp;=</span>
-        <span class="eq-result-val">1 − 0,26 = 0,74</span>
-      </div>
-      <p style="margin-top:16px;font-size:13px;color:var(--ink-3);line-height:1.65;font-weight:300">El PR de 0,74 utilizado en el dimensionamiento inicial queda validado con el cálculo detallado de pérdidas. Coincide con la estimación conservadora de PVWatts para Neiva (PR implícito del sitio).</p>
     </div>
 
   </div><!-- /sub-bloque D -->
